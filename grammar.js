@@ -37,6 +37,7 @@ module.exports = grammar({
       ),
     ),
 
+    keyword_select1: _ => make_keyword("select1"),
     keyword_select: _ => make_keyword("select"),
     keyword_delete: _ => make_keyword("delete"),
     keyword_insert: _ => make_keyword("insert"),
