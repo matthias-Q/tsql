@@ -181,6 +181,7 @@ module.exports = grammar({
     keyword_terminated: _ => make_keyword("terminated"),
     keyword_escaped: _ => make_keyword("escaped"),
     keyword_lines: _ => make_keyword("lines"),
+    keyword_lines2: _ => make_keyword("linos"),
 
     // Hive file formats
     keyword_parquet: _ => make_keyword("parquet"),

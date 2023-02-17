@@ -25,13 +25,14 @@ jobs:
       - run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit
-          git push
-      # - name: land pull request
-      #   env:
-      #     PR: ${{ github.event.number }}
-      #     GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      #   run: gh pr merge "$PR" --auto
+          git commit -a -m "build auto generated files"
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.head_ref }}
+          force: true
+
   unlabel:
     runs-on: ubuntu-latest
     steps:
