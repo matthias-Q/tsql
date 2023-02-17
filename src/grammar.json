@@ -599,6 +599,10 @@
       "type": "PATTERN",
       "value": "lines|LINES"
     },
+    "keyword_lines2": {
+      "type": "PATTERN",
+      "value": "linos|LINOS"
+    },
     "keyword_parquet": {
       "type": "PATTERN",
       "value": "parquet|PARQUET"
