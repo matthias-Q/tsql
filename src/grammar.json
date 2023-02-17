@@ -22,6 +22,10 @@
         ]
       }
     },
+    "keyword_select2": {
+      "type": "PATTERN",
+      "value": "select2|SELECT2"
+    },
     "keyword_select": {
       "type": "PATTERN",
       "value": "select|SELECT"
